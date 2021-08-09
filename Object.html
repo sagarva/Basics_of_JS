@@ -8,9 +8,15 @@
 </head>
 <body>
     <script>
-        let tv = { Size:55, Brand:"Samsung", cost:50000, material:"Plastic"}; //syntax to create an object
+        let tv = { 
+            Size:55, Brand:"Samsung", cost:50000, material:"Plastic",  //syntax to create an object
+            fullname: function(){
+                return this.Brand + " oled " + this.Size;
+            }
+        
+        }; 
 
-        console.log(tv.Brand) //syntax to pull one prop of the object
+        console.log(tv.fullname()) //syntax to pull one prop of the object
     </script>
 
     
